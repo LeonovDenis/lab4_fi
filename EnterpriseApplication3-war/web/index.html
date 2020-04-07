@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Стартовая страница для учебного web-приложения "Messanger", которое демонстирует 
+применение Message DrivenBeans (MDB) и Java Persistence API (JPA).
+Приложение позволяет пользователю вводить сообщения под своим идентификатором 
+(логином), которые сохраняются в базе данных, а затем запросить из базы данных 
+все ранее введённые сообщения.
+(C) Ю.Д.Заковряшин, 2008-2020.
+-->
+<html>
+    <head>
+        <title>Messager, v.1.0</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header style="height: 40px; text-align: center; line-height: 40px;
+                color: ghostwhite; background-color: #0099ff">
+            <h2>Приложение Messager, v.1.1</h2>          
+        </header>
+        <hr width="100%" align="center" />
+         <div style="text-align: center">
+            Лабораторная работа № 4.
+        </div>
+        
+        <form action="Messager" method="GET" >
+            <p  style="text-align: center">
+                <!-- Ввод идентификатора пользователя (логина) -->
+                Введите Ваше имя(логин) длиной до 8 символов:
+                <input type="text" name="login" size="8" required />
+            </p>
+            <p style="text-align: center">
+                <!-- Кнопка отправки формы на сервер -->           
+                <input type="submit" value="Начать работу"/>  
+            </p>
+        </form>
+        <hr width="100%" align="center" />
+        <footer style="height:20px; text-align: center; line-height: 20px;
+                color: ghostwhite; font-size: smaller; font-weight: bolder; 
+                background-color: #0099ff">
+            
+        </footer>
+    </body>
+</html>
